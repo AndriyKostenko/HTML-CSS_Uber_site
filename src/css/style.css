@@ -147,4 +147,71 @@ nav {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
-} 
+}
+
+.reasons {
+    min-height: 850px;
+    padding: 18px 0 65px 0;
+    background: #FFFFFF;
+}
+
+.reasons .reasons_adv {
+    margin: 0 auto;
+    width: 113px;
+    height: 24px;
+    padding: 5px 12px;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    background: #000000;
+}
+
+.reasons .reasons_title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 38px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.reasons .reasons_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.reasons .reasons_img-wrapper {
+    display: flex;
+    width: 116px;
+    height: 116px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1EACC7;
+    border-radius: 100%;
+}
+
+.reasons .reasons_block .reasons_descr {
+    margin-left: 25px;
+    width: 371px;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_subtitle{
+    line-height: 21px;
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}

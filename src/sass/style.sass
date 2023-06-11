@@ -1,4 +1,14 @@
+// creating variables
 $subtutle-color: #1EACC7
+
+
+// creating mixins
+=btn_hover
+	&:hover
+		background-image: none
+		background-color: #1eacc7
+
+
 	
 	
 * 
@@ -22,12 +32,12 @@ nav
 	padding: 13px 70px 
 	margin: 0 
 	list-style-type: none 
-	.menu_link 
+	&_link 
 		font-weight: 300 
 		font-size: 15px 
 		color: #FFFFFF 
 		text-decoration: none 
-	.menu_item 
+	&_item 
 		border-right: 2px dotted black 
 		padding-right: 28px 
 .subheader 
@@ -36,26 +46,26 @@ nav
 	width: 100% 
 	height: 87px 
 	background: rgba(0, 0, 0, .6) 
-	.subheader_logo 
+	&_logo 
 		display: block 
 		max-width: 100% 
 		margin-top: 16px 
 		padding-left: 18px 
 	.uber_logo 
 		height: 42px 
-	.subheader_official 
+	&_official 
 		margin-top: 6px 
 		opacity: 0.5 
 		color: #FFFFFF 
 		font-size: 13px 
 		font-weight: 400 
-	.subheader_call 
+	&_call 
 		color: #FFFFFF 
 		font-size: 12px 
 		font-weight: 300 
 		margin-top: 19px 
 		text-align: right 
-	.subheader_phone 
+	&_phone 
 		display: block 
 		margin-top: 8px 
 		color: #FFFFFF 
@@ -65,7 +75,7 @@ nav
 		text-align: right 
 		line-height: 12px 
 		text-decoration: none 
-	.subheader_btn 
+	&_btn 
 		margin-top: 19px 
 		width: 172px 
 		height: 46px 
@@ -80,11 +90,12 @@ nav
 		text-transform: uppercase 
 		color: #FFFFFF 
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
+		+btn_hover
 .promo 
 	min-height: 800px 
 	background: url('../img/bg/main_bg.jpg') center center/cover no-repeat 
 	padding: 150px 0 135px 0 
-	.promo_header 
+	&_header 
 		font-weight: 700 
 		font-size: 60px 
 		text-transform: uppercase 
@@ -92,7 +103,7 @@ nav
 		line-height: 60px 
 		margin: 0 
 		text-align: center 
-	.promo_subheader 
+	&_subheader 
 		font-weight: 700 
 		font-size: 36px 
 		text-transform: uppercase 
@@ -101,14 +112,14 @@ nav
 		margin: 0 
 		margin-top: 22px 
 		text-align: center 
-	.promo_descr 
+	&_descr 
 		font-weight: 400 
 		font-size: 18px 
 		line-height: 24px 
 		text-align: center 
 		color: #FFFFFF 
 		margin-top: 23px 
-	.promo_btn 
+	&_btn 
 		display: block 
 		margin: 118px auto 0 auto 
 		width: 259px 
@@ -122,29 +133,30 @@ nav
 		font-size: 18px 
 		font-weight: 400 
 		text-transform: uppercase 
+		+btn_hover
 .reasons 
 	min-height: 850px 
 	padding: 18px 0 65px 0 
 	background: #FFFFFF
-	.reasons_block 
+	&_block 
 		display: flex 
 		justify-content: center 
 		align-items: center 
 		margin-bottom: 35px 
-	.reasons_descr 
+	&_descr 
 			margin-left: 25px 
 			width: 371px 
-			.reasons_subtitle 
+			&_subtitle 
 				line-height: 21px 
 				color: $subtutle-color 
 				font-size: 17px 
 				font-weight: 400 
-			.reasons_text 
+			&_text 
 				color: #202020 
 				font-size: 15px 
 				font-weight: 300 
 				line-height: 21px 
-	.reasons_img-wrapper 
+	&_img-wrapper 
 		display: flex 
 		width: 116px 
 		height: 116px 
@@ -243,6 +255,30 @@ nav
 			margin: 0 auto 
 			border-radius: 100%
 			cursor: pointer
+			&::before
+				content: ''
+				display: block
+				width: 14px 
+				height: 2px 
+				background-color: #1EACC7
+				transition: 0.3s all
+			&::after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block 
+				height: 14px
+				width: 2px
+				background-color: #1EACC7
+				transition: 0.3s all
+			&:hover
+				&::before, &::after
+					background-color:#FF5656
+
+
+					
+
 
 .choice
 	position: relative
@@ -269,7 +305,51 @@ nav
 		font-weight: 300
 		line-height: 24px
 
-	
+.require
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
+		&_no_margin_bottom
+			margin-bottom: 0px
+	&_title
+		color: #1ca8c3
+		font-size: 22px 
+		font-weight: 400
+	&_list
+		list-style-type: none 
+		padding-left: 50px
+		margin-top: 22px 
+		li
+			position: relative
+			font-size: 17px
+			font-weight: 300 
+			line-height: 24px
+			margin-bottom: 10px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px 
+				height: 20px 
+				background: url('../icons/check_blue.svg') center (center/cover) no-repeat
+	&_descr 
+		margin-top: 25px 
+		font-size: 17px 
+		font-weight: 300 
+		line-height: 24px 
+		color: #1ca8c3
+	.warning
+		.require_title
+			color: #FF5656
+		.require_list
+			li 
+				&::before
+					background: url('../icons/check_red.svg') center (center/cover) no-repeat
+
+					
+
 		
 		
 

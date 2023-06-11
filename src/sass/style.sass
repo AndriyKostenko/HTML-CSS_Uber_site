@@ -1,3 +1,6 @@
+$subtutle-color: #1EACC7
+	
+	
 * 
 	font-family: 'Roboto', sans-serif 
 header 
@@ -133,7 +136,7 @@ nav
 			width: 371px 
 			.reasons_subtitle 
 				line-height: 21px 
-				color: #1eacc7 
+				color: $subtutle-color 
 				font-size: 17px 
 				font-weight: 400 
 			.reasons_text 
@@ -150,7 +153,8 @@ nav
 		background-color: #1EACC7 
 		border-radius: 100% 
 
-.label 
+.label
+	position: relative
 	margin: 0 auto 
 	width: 113px 
 	height: 24px 
@@ -161,9 +165,14 @@ nav
 	text-transform: uppercase 
 	color: #FFFFFF 
 	mix-blend-mode: normal 
-	background: #000000 
+	background: #000000
+	z-index: 2
+	&_white 
+		background-color: #fff
+		color: #000
 
-.title 
+.title
+	position: relative
 	margin-top: 32px 
 	margin-bottom: 16px 
 	font-weight: 700 
@@ -172,8 +181,12 @@ nav
 	text-align: center 
 	text-transform: uppercase 
 	color: #222222
+	z-index: 2
+	&_white 
+		color: #fff
 
 .subtitle
+	position: relative
 	margin-top: 19px
 	font-weight: 400
 	font-size: 17px
@@ -181,6 +194,9 @@ nav
 	align-items: center
 	text-align: center
 	color: #222222
+	z-index: 2
+	&_white 
+		color: #fff
 
 .mobile
 	min-height: 864px
@@ -227,5 +243,35 @@ nav
 			margin: 0 auto 
 			border-radius: 100%
 			cursor: pointer
+
+.choice
+	position: relative
+	min-height: 900px
+	padding: 59px 0 138px 0
+	background: url('../img/bg/mobile_app.png') center (center / cover) no-repeat
+	&_black_sect
+		position: absolute
+		top: 0
+		left: 0
+		min-height: 500px
+		width: 100%
+		background: #070716
+		z-index: 1
+	&_img
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+	&_text
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+
+	
+		
+		
+
 		
 

@@ -6,11 +6,16 @@ nav
 	width: 100% 
 	height: 50px 
 	background-color: #212121 
-	z-index: 2 
+	z-index: 3 
 	a 
 		&:hover 
 			background: #ddd 
 			color: #1eacc7 
+
+.hamburger
+	display: none
+	
+
 .menu 
 	display: flex 
 	justify-content: space-between 
@@ -78,6 +83,8 @@ nav
 		color: #FFFFFF 
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21) 
 		+btn_hover
+
+
 .promo 
 	min-height: 800px 
 	background: url('../img/bg/main_bg.jpg') center center/cover no-repeat 
@@ -133,16 +140,16 @@ nav
 	&_descr 
 			margin-left: 25px 
 			width: 371px 
-			&_subtitle 
-				line-height: 21px 
-				color: $subtutle-color 
-				font-size: 17px 
-				font-weight: 400 
-			&_text 
-				color: #202020 
-				font-size: 15px 
-				font-weight: 300 
-				line-height: 21px 
+	&_subtitle 
+		line-height: 21px 
+		color: $subtitle-color 
+		font-size: 17px 
+		font-weight: 400 
+	&_text 
+		color: #202020 
+		font-size: 15px 
+		font-weight: 300 
+		line-height: 21px 
 	&_img-wrapper 
 		display: flex 
 		width: 116px 
@@ -267,8 +274,6 @@ nav
 
 
 					
-
-
 .choice
 	position: relative
 	min-height: 900px
@@ -425,3 +430,5 @@ footer
 			margin-top: 19px
 			text-transform: uppercase
 			text-align: center
+.xs-visible
+	display: none

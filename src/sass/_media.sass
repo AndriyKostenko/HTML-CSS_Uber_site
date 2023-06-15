@@ -68,6 +68,8 @@
             &_block
                 flex-direction: column
                 align-items: center
+            &_img-wrapper
+                margin-right: 0
             &_descr 
                 width: 300px
                 margin-top: 20px
@@ -163,14 +165,181 @@
         &_header
             font-size: 40px
             line-height: 45px
-                    
-                    
-                
-                    
+    .reasons
+        padding: 40px 0
+        &_descr 
+            width: 350px
+        &_subtitle 
+            text-align: center
+        &_text 
+            margin-top: 10px
+    .mobile 
+        padding: 40px 0
+    .choice
+        min-height: 600px
+        padding: 40px 0
+    .require
+        padding: 40px 0
+    .world 
+        min-height: 450px
 
-                    
+@media (max-width: 575px)
+    nav
+        height: 30px
+    header 
+        height: 30px
+    .subheader
+        height: 60px
+        top: 30px
+        &_official
+            display: none
+        &_phone
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            margin-top: 11px
+        &_btn 
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 6px
+        &_logo
+            .uber_logo
+                height: 35px
+    .promo
+        min-height: 400px
+        padding: 93px 0 35px 0 
+        &_descr
+            display: none
+        &_header
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            margin-top: 33px
+            padding: 0 10px
+            line-height: 30px
+        &_btn 
+            width: 210px
+            height: 50px
+            margin-top: 72px
+            font-size: 16px
+    .menu 
+        width: 85%
+        &_item 
+            width: 100%
+            text-align: center
+            padding: 5px 0
+        &_link
+            display: block
+    .hamburger
+        &_active 
+            span 
+                &:nth-child(1)
+                    transform: translateY(5px) rotate(-45deg)
+                &:nth-child(3)
+                    transform: translateY(5px) rotate(45deg)
+    .reasons
+        padding: 22px 0 36px 0
+        &_block 
+            margin-top: 26px
+        &_img-wrapper
+            width: 100px
+            height: 100px
+        &_descr
+            width: 100%
+            margin-top: 27px
+        &_subtitle
+            font-size: 16px
+            text-align: left
+        &_text 
+            margin-top: 0
 
-    
-
-
-    
+    .title
+        font-size: 16px
+        margin-top: 15px
+        line-height: 16px
+    .mobile
+        padding: 20px 0 40px 0
+        .row 
+            margin-top: 30px
+        &_item 
+            width: 290px
+            height: 254px
+            padding: 81px 40px 0 40px
+            &_subtitle
+                font-size: 18px
+                line-height: 31px
+            &_plus 
+                bottom: 28px
+    .choice
+        min-height: 393px
+        padding: 27px 0 31px 0
+        background: #000
+        &_img
+            margin-top: 35px
+        &_text
+            margin-top: 23px
+            color: #ffffff
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+        &_black_sect
+            display: none
+        .to_hide
+            display: none
+    .require
+        padding: 22px 16px 30px 16px
+        &_block 
+            margin: 30px 0 0 0
+        &_title
+            font-weight: 400
+            font-size: 16px
+        &_list
+            padding-left: 30px
+            margin-top: 5px
+            li
+                line-height: 20px
+                font-size: 14px 
+                margin-bottom: 5px
+        &_descr
+            font-size: 14px
+            margin-top: 15px
+    .world
+        min-height: 360px
+        padding: 26px 0 30px
+        &_link
+            display: block
+            width: 222px
+            font-weight: 400
+            font-size: 15px
+            bottom: 10px
+    footer
+        padding: 24px 0 30px 0
+    .footer
+        &_divider
+            width: 255px
+            height: 6px
+        &_wrapper
+            padding-top: 21px
+        &_wrapper > div 
+            margin-bottom: 20px
+            &:nth-child(1)
+                order: 2
+            &:nth-child(2)
+                order: 1
+            &:nth-child(3)
+                order: 3
+        &_links
+            width: 285px
+            &_main
+                padding: 0
+                font-size: 14px
+            &_sub
+                flex-wrap: wrap
+                justify-content: center
+                a 
+                    margin: 0 7px
+            &_lang
+                margin-top: 10px

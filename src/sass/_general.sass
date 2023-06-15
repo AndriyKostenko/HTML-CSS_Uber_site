@@ -9,8 +9,9 @@ nav
 	z-index: 3 
 	a 
 		&:hover 
-			background: #ddd 
-			color: #1eacc7 
+			background: rgba(255, 255, 255, 0.7)
+			color: #1eacc7
+			border-radius: 5px
 
 .hamburger
 	display: none
@@ -28,7 +29,7 @@ nav
 		color: #FFFFFF 
 		text-decoration: none 
 	&_item 
-		border-right: 2px dotted black 
+		border-right: 2px dotted black
 		padding-right: 28px
 		&:last-child
 			border-right: none
@@ -36,7 +37,7 @@ nav
 	position: absolute 
 	top: 50px 
 	width: 100% 
-	height: 87px 
+	height: 84px 
 	background: rgba(0, 0, 0, .6) 
 	&_logo 
 		display: block 
@@ -129,17 +130,14 @@ nav
 		text-transform: uppercase 
 		+btn_hover
 .reasons 
-	min-height: 850px 
-	padding: 18px 0 65px 0 
-	background: #FFFFFF
+	padding: 71px 0 65px 0
 	&_block 
 		display: flex 
 		justify-content: center 
 		align-items: center 
-		margin-bottom: 35px 
-	&_descr 
-			margin-left: 25px 
-			width: 371px 
+		margin-top: 35px 
+	&_descr  
+		width: 343px 
 	&_subtitle 
 		line-height: 21px 
 		color: $subtitle-color 
@@ -152,8 +150,8 @@ nav
 		line-height: 21px 
 	&_img-wrapper 
 		display: flex 
-		width: 116px 
-		height: 116px 
+		width: 113px 
+		height: 113px 
 		justify-content: center 
 		align-items: center 
 		background-color: #1EACC7 
